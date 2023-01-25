@@ -29,7 +29,10 @@
   
 }
 
+
 body {
+  background-image: url("dog-background.jpg");
+  background-size: contain;
   font-family: Helvetica;
   background-color: white;
   color: #514644;
@@ -124,4 +127,38 @@ footer {
   padding: -5px;
   text-align: center;
 
+}
+
+.selection {
+  width: 80%;
+  height: 70%;
+  background-color:white; 
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  max-width: 500px;
+}
+
+.service {
+  text-align: left;
+  width: 75%;
+  height: 70;
+}
+
+.price {
+  text-align: right;
+  width: 25%
+}
+
+.item p {
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+hr {
+  height: 2px;
+  background-color: #514644;
+  border-color: #514644;
 }

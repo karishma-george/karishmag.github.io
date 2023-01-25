@@ -34,6 +34,7 @@ body {
   background-color: white;
   color: #514644;
   height: 200%;
+  font-size: medium;
 }
 
 a {
@@ -118,10 +119,26 @@ main {
   padding-top: 130px;
 }
 
+.poster-image {
+  width: 100%;
+  align-items: center;
+ 
+}
+
 footer {
   background-color: #efc8b1;
   color: #514644;
   padding: -5px;
   text-align: center;
 
+}
+
+#accreditation {
+  font-style: italic;
+  
+}
+
+.important {
+  font-size: 22px;
+  text-align: center;
 }

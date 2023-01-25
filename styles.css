@@ -4,12 +4,18 @@
     }
   }
 
-  @media (max-width: 1199px) and (min-width: 769px) {
+  @media (max-width: 600px) {
 
-  }
-
-  @media (max-width: 1199px) and (min-width: 769px) {
-
+    h1 {
+        font-size: 1.2em;
+        text-align: center;
+      }
+    
+    nav > ul > li {
+      font-size: 12px  !important;
+      height: 10% !important;
+    }
+   
   }
 
   body {
@@ -52,7 +58,7 @@
    }
 
    h1 {
-    font-size: min(5vw, 2em);
+    font-size: min(5vw, 2.5em);
     text-align: center;
   }
 
@@ -78,7 +84,7 @@
 
     background-color: #efc8b1;
     color: #514644;
-    margin: 0.2rem 0.2rem;
+    margin: 0 0.2rem;
     padding: 0.2rem;
     display: block;
     font-size: 16px;

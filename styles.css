@@ -4,13 +4,18 @@
     }
   }
 
-  * {
-    background-color: #efc8b1 ;
-    color: #514644;
+  @media (max-width: 1199px) and (min-width: 769px) {
+
+  }
+
+  @media (max-width: 1199px) and (min-width: 769px) {
+
   }
 
   body {
     font-family: Helvetica;
+    background-color: white;
+    color: #514644;
   }
 
   a {
@@ -19,9 +24,73 @@
   a:hover {
     background-color: #514644 ;
     color:#efc8b1 ;
+    cursor: pointer;
     
   }
 
-   h1, h2 {
+  #logo {
+    width: max(100px, 18vw);
+    background-color: #efc8b1;
+    position: relative;
+  }
+
+  header {
+    width: 100%;
+    height: 150px;
+    background-color: #efc8b1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  
+  h1, h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
    }
+
+   h1 {
+    font-size: min(5vw, 2em);
+    text-align: center;
+  }
+
+  nav {
+    width: 50%;
+    max-width: 300px;
+    height:  100px;
+    background-color: #efc8b1;
+  }
+  
+  nav > ul {
+    background-color: #efc8b1;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
+  }
+  
+  nav > ul > li {
+
+    background-color: #efc8b1;
+    color: #514644;
+    margin: 0.2rem 0.2rem;
+    padding: 0.2rem;
+    display: block;
+    font-size: 16px;
+  }
+  
+  nav > ul > li:hover {
+    background-color: #efc8b1;
+    color: #514644;
+    cursor: pointer;
+  }
+  
+  li > a {
+    color: inherit;
+    text-decoration: none;
+  }

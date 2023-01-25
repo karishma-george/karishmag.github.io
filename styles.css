@@ -1,0 +1,27 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
+
+  * {
+    background-color: #efc8b1 ;
+    color: #514644;
+  }
+
+  body {
+    font-family: Helvetica;
+  }
+
+  a {
+    color:  #514644;
+  }
+  a:hover {
+    background-color: #514644 ;
+    color:#efc8b1 ;
+    
+  }
+
+   h1, h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   }

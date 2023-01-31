@@ -13,6 +13,7 @@
 
 html {
   margin: 0;
+  font-size: 18px;
 }
 
 body {
@@ -45,7 +46,7 @@ header {
   height: 9em;
   background-color: #efc8b1;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   position: fixed;
   top: 0;
@@ -62,7 +63,7 @@ h1 {
 }
 
 h2 {
-  font-size: max(2vw, 0.9em);
+  font-size: 1.1rem;
 }
 
 nav {
@@ -102,29 +103,63 @@ li > a {
   text-decoration: none;
 }
 
-main {
-  padding-top: 10em;
-  font-size: 1.1em;
+body {
+  background-image: url("dog-background.jpg");
+  background-size: contain;
+  font-family: Helvetica;
+  background-color: white;
+  color: #514644;
 }
 
-.poster-image {
-  width: 100%;
+.filler {
+  height: 10vh;
+  padding-bottom: 1.3em;
+}
+
+.selection {
+  width: max(80vw, 5em);
+  background-color: white;
+  margin: 3em auto 1em auto;
+  padding: 0.5em;
+  height: 100%;
+}
+
+.service {
+  text-align: left;
+  width: 60%;
+}
+
+.price {
+  text-align: right;
+  width: 40%;
+}
+
+.item p {
+  margin-top: 0.8vh;
+  margin-bottom: 0.8vh;
+  font-size: 1rem;
+  display: inline-block;
   align-items: center;
-  margin: -1.5em auto 0 auto;
+  justify-content: center;
+}
+
+hr {
+  height: 2px;
+  background-color: #514644;
+  border-color: #514644;
 }
 
 footer {
+  font-size: 0.7em;
   background-color: #efc8b1;
   color: #514644;
   padding: -0.3em 0;
   text-align: center;
+  bottom: -7em;
+  width: 100vw;
+  position: fixed;
 }
 
-#accreditation {
-  font-style: italic;
-}
-
-.quote {
-  font-size: 1.2em;
-  text-align: center;
+html:not([data-scroll="0"]) footer {
+  position: relative;
 }

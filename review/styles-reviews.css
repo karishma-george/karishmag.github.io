@@ -15,6 +15,22 @@ html {
   margin: 0;
 }
 
+nav > ul > li {
+  font-size: 12px !important;
+  height: 10% !important;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex: 1 0 100%;
+  align-items: center;
+  padding-inline-start: 0;
+  margin-block: 0;
+  height: 100%;
+}
+
 body {
   font-family: Helvetica;
   background-color: white;
@@ -48,12 +64,13 @@ header {
   justify-content: space-around;
   align-items: center;
   position: fixed;
-  top: 0;
+  top: 0%;
 }
 
 h1,
 h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
 }
 
 h1 {
@@ -63,6 +80,12 @@ h1 {
 
 h2 {
   font-size: max(2vw, 0.9em);
+}
+
+p {
+  font-size: medium;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 1em;
 }
 
 nav {
@@ -102,15 +125,35 @@ li > a {
   text-decoration: none;
 }
 
-main {
-  padding-top: 10em;
-  font-size: 1.1em;
+body {
+  font-family: Helvetica;
+  background-color: white;
+  color: #514644;
+  margin-top: 20vh;
 }
 
-.poster-image {
-  width: 100%;
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  margin: -1.5em auto 0 auto;
+  gap: 1em;
+  max-width: 95vw;
+  margin: 0 auto;
+  padding: 1.25em 5.25em;
+}
+
+.gallery img {
+  width: 12em;
+  height: 12em;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.gallery::after {
+  content: "";
+  width: 20em;
 }
 
 footer {
@@ -120,11 +163,6 @@ footer {
   text-align: center;
 }
 
-#accreditation {
-  font-style: italic;
-}
-
-.quote {
-  font-size: 1.2em;
-  text-align: center;
+.special {
+  display: block;
 }

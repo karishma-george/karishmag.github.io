@@ -9,3 +9,16 @@ function myFunction() {
     header_element.style["flex-wrap"] = "wrap";
   }
 }
+
+async function fetchImage() {
+  let response = await fetch("https://dog.ceo/api/breeds/image/random");
+  if (response.status === 200) {
+    let data = await response.json;
+    console.log(data);
+    document.getElementById("poster-image").src = "${data.message}";
+  } else {
+    document.getElementById("poster-image").src = "./puppies.jpg";
+  }
+}
+
+fetchImage();

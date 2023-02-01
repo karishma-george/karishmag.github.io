@@ -4,13 +4,6 @@
   }
 }
 
-@media (max-width: 7vw) {
-  h1 {
-    font-size: 1.4em;
-    text-align: center;
-  }
-}
-
 html {
   margin: 0;
 }
@@ -20,7 +13,11 @@ body {
   background-color: white;
   color: #514644;
   padding: 0;
-  margin: 0;
+  margin: auto;
+}
+
+.header-nav a.icon {
+  visibility: hidden;
 }
 
 a {
@@ -33,22 +30,24 @@ a:hover {
 }
 
 #logo {
-  height: 14vh;
+  height: auto;
   background-color: #efc8b1;
   position: relative;
   object-fit: cover;
   padding: 0;
+  width: 20vw;
 }
 
 header {
   width: 100%;
-  height: 9em;
+  height: 100%;
   background-color: #efc8b1;
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-end;
   align-items: center;
-  position: fixed;
-  top: 0%;
+  top: 0;
 }
 
 h1,
@@ -58,8 +57,11 @@ h2 {
 }
 
 h1 {
-  font-size: max(5vw, 2em);
+  font-size: min(4vw, 4em);
   text-align: center;
+  width: 60vw;
+  padding: 2em auto;
+  height: auto;
 }
 
 h2 {
@@ -92,15 +94,17 @@ nav > ul {
 nav > ul > li {
   background-color: #efc8b1;
   color: #514644;
-  margin: 0 0;
-  padding: 0.7em 0.2em;
+  margin: 0;
+  padding: 0;
+  height: auto;
   display: block;
   font-size: max(1.3vw, 0.9em);
+  text-align: left;
 }
 
-nav > ul > li:hover {
-  background-color: #efc8b1;
-  color: #514644;
+nav > ul > li > a:hover {
+  background-color: #514644;
+  color: #efc8b1;
   cursor: pointer;
 }
 
@@ -113,7 +117,6 @@ body {
   font-family: Helvetica;
   background-color: white;
   color: #514644;
-  margin-top: 20vh;
 }
 
 .gallery {
@@ -157,4 +160,60 @@ html:not([data-scroll="0"]) footer {
 
 .special {
   display: block;
+}
+
+@media (max-width: 650px) {
+  .header-nav {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .header-nav #navigation-links {
+    display: none;
+  }
+
+  .header-nav a {
+    color: #514644;
+    padding: 0.92em 1em;
+    text-decoration: none;
+    font-size: 1em;
+    display: flex;
+  }
+
+  .header-nav a.icon {
+    visibility: visible;
+    display: flex;
+    background: #efc8b1;
+    position: relative;
+    justify-content: center;
+    margin-top: -0.5em;
+    top: 0;
+    right: 0;
+  }
+
+  .header-nav a:hover {
+    background-color: #514644;
+    color: #efc8b1;
+  }
+
+  nav > ul > li {
+    width: 100vw;
+  }
+}
+
+@media (min-width: 651px) {
+  header {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #logo {
+    height: auto;
+    width: 10vw;
+  }
+
+  h1 {
+    font-size: min(3vw, 4em);
+    width: auto;
+  }
 }

@@ -110,9 +110,10 @@ main {
   margin: auto;
 }
 
-.poster-image {
-  width: 100vw;
-  height: fit-content;
+#poster-image {
+  width: 80vw;
+  height: 40vw;
+  object-fit: contain;
   align-items: center;
   margin: 0 auto 0 auto;
 }
@@ -124,7 +125,7 @@ footer {
   text-align: center;
   width: 100vw;
   bottom: 0;
-  position: fixed;
+  position: relative;
 }
 
 #accreditation {

@@ -154,9 +154,13 @@ select {
   font-size: 0.8em;
 }
 
+textarea,
+select,
 input[type="text"],
 input[type="number"],
-input[type="file"] {
+input[type="file"],
+input[type="password"],
+input[type="email"] {
   min-width: 40vw;
   max-width: 70vw;
 }

@@ -53,7 +53,7 @@ function recursive_calculate(uservalue) {
       uservalue.indexOf("(") + 1,
       uservalue.lastIndexOf(")")
     );
-    let answer = calculate(tokenize(sub_equation));
+    let answer = recursive_calculate(sub_equation);
     let new_equation = uservalue.replace(
       uservalue.substring(
         uservalue.indexOf("("),
@@ -61,14 +61,26 @@ function recursive_calculate(uservalue) {
       ),
       answer.toFixed(1)
     );
-    return recursive_calculate(new_equation);
-  } else {
-    return calculate(tokenize(uservalue));
+    return calculate(tokenize(new_equation));
+  }
+  return calculate(tokenize(uservalue));
+}
+
+function calculateFunction() {
+  let userInput = document.getElementById("inputData");
+  console.log(userInput.value);
+  userInput.value = recursive_calculate(userInput.value);
+}
+
+function inFunction(ele) {
+  let getValue = document.getElementById("inputData");
+  let btnValue = ele.innerText;
+  getValue.value += btnValue;
+}
+
+function clearFunction(ele) {
+  let getValue = document.getElementById("inputData");
+  if (getValue.value != "") {
+    getValue.value = "";
   }
 }
-const calculateButton = document.getElementById("submit");
-const userInput = document.getElementById("inputData");
-const result = document.getElementById("result");
-calculateButton.addEventListener("click", function () {
-  result.innerText = "The answer is " + recursive_calculate(userInput.value);
-});

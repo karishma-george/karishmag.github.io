@@ -4,18 +4,171 @@
     <meta charset="utf-8" />
     <title>Calculator</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      type="css"
-      media="screen"
-      href="calculator-styles.css"
-    />
+    <link rel="stylesheet" href="calculator-styles.css" />
   </head>
   <body>
-    <label for="inputData">Write your equation here: </label>
+    <label for="inputData"> Calculator</label>
+    <div class="calculator">
+      <input type="text" class="calculator-screen" id="inputData" disabled />
+
+      <div class="calculator-keys">
+        <button
+          id="btn0"
+          onclick="inFunction(this)"
+          class="calc-elements"
+          value="+"
+        >
+          +
+        </button>
+        <button
+          id="btn1"
+          onclick="inFunction(this)"
+          class="calc-elements"
+          value="-"
+        >
+          -
+        </button>
+        <button
+          id="btn2"
+          onclick="inFunction(this)"
+          class="calc-elements"
+          value="*"
+        >
+          *
+        </button>
+        <button
+          id="btn3"
+          onclick="inFunction(this)"
+          class="calc-elements"
+          value="/"
+        >
+          /
+        </button>
+
+        <button
+          id="btn4"
+          onclick="inFunction(this)"
+          class="calc-elements"
+          value="7"
+        >
+          7
+        </button>
+        <button
+          id="btn5"
+          onclick="inFunction(this)"
+          class="calc-elements"
+          value="8"
+        >
+          8
+        </button>
+        <button
+          id="btn6"
+          onclick="inFunction(this)"
+          class="calc-elements"
+          value="9"
+        >
+          9
+        </button>
+        <button
+          id="btn7"
+          onclick="inFunction(this)"
+          class="calc-elements"
+          value="("
+        >
+          (
+        </button>
+        <button
+          id="btn8"
+          onclick="inFunction(this)"
+          class="calc-elements"
+          value="4"
+        >
+          4
+        </button>
+        <button
+          id="btn9"
+          onclick="inFunction(this)"
+          class="calc-elements"
+          value="5"
+        >
+          5
+        </button>
+        <button
+          id="btn10"
+          onclick="inFunction(this)"
+          class="calc-elements"
+          value="6"
+        >
+          6
+        </button>
+        <button
+          id="btn11"
+          onclick="inFunction(this)"
+          class="calc-elements"
+          value=")"
+        >
+          )
+        </button>
+
+        <button
+          id="btn12"
+          onclick="inFunction(this)"
+          class="calc-elements"
+          value="1"
+        >
+          1
+        </button>
+        <button
+          id="btn13"
+          onclick="inFunction(this)"
+          class="calc-elements"
+          value="2"
+        >
+          2
+        </button>
+        <button
+          id="btn14"
+          onclick="inFunction(this)"
+          class="calc-elements"
+          value="3"
+        >
+          3
+        </button>
+        <button
+          class="equal-sign"
+          onclick="calculateFunction()"
+          id="equal-sign"
+          value="="
+        >
+          =
+        </button>
+        <button id="all-clear" onclick="clearFunction(this)" class="all-clear">
+          AC
+        </button>
+        <button
+          id="btn15"
+          onclick="inFunction(this)"
+          class="calc-elements"
+          value="0"
+        >
+          0
+        </button>
+        <button
+          id="btn16"
+          onclick="inFunction(this)"
+          class="calc-elements"
+          class="."
+          value="."
+        >
+          .
+        </button>
+      </div>
+    </div>
+
+    <!-- <label for="inputData">Write your equation here: </label>
     <input type="text" id="inputData" />
     <input type="submit" id="submit" value="Submit" />
-    <p id="result"></p>
+    <p id="result"></p> -->
   </body>
   <script src="calculator.js"></script>
 </html>
